@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -37,11 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'rango',
-=======
-   
->>>>>>> b0700c3bd26b29848ee8146570484025f09c0973
 ]
 
 MIDDLEWARE = [
@@ -71,7 +68,7 @@ TEMPLATES = [
         },
     },
 ]
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
 
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
